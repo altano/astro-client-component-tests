@@ -1,0 +1,20 @@
+.text {
+  font-size: 75px;
+  color: white;
+}
+
+.buttonStuff span {
+  font-size: 40px;
+  color: goldenrod;
+}
+
+.buttonStuff button {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.container {
+  width: 700px;
+  padding: 25px;
+  background-color: darkslateblue;
+}
