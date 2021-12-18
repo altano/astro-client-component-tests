@@ -1,10 +1,13 @@
 import styles from './ClientComponent.module.css';
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 export default function ClientComponent() {
   const [counter, setCounter] = useState(0);
   const incrementCounter = () => setCounter((counter) => counter + 1);
+  useEffect(() => {
+    performance.mark('ClientComponent Mounted');
+  });
   return (
     <div className={styles.container}>
       <div className={styles.text}>
